@@ -20,15 +20,15 @@ If you want to change the repeat timing simply change
 =*clear-font-repeat*= and then execute the main-loop again.
 
 #+BEGIN_SRC lisp
-		(setq xft-fix:*clear-font-repeat* 20)
-		(xft-fix:main-loop)
+  (setq xft-fix:*clear-font-repeat* 20)
+  (xft-fix:main-loop)
 #+END_SRC
 
-You can also insert a delay for the timer:
+You can also insert a delay for the timer using =*clear-font-delay*=.
 	
 #+BEGIN_SRC lisp
-		(setq xft-fix:*clear-font-delay* 5)
-		(xft-fix:main-loop)
+  (setq xft-fix:*clear-font-delay* 5)
+  (xft-fix:main-loop)
 #+END_SRC
 
 ## License
