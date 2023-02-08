@@ -8,27 +8,26 @@ so it doesnt take up all the memory.
 ** Usage
 
 Simply place into the modules directory, =load-module= it, then run
-=main-loop=. It will clear the cache every 10 minutes.
+=start-loop=. It will clear the cache every 10 minutes.
 	
 #+BEGIN_SRC lisp
   (load-module "xft-fix")
-  ; start the main-loop
-  (xft-fix:main-loop)
+  (xft-fix:start-loop)
 #+END_SRC
 
 If you want to change the repeat timing simply change
-=*clear-font-repeat*= and then execute the main-loop again.
+=*clear-font-repeat*= and then execute the start-loop again.
 
 #+BEGIN_SRC lisp
   (setq xft-fix:*clear-font-repeat* 20)
-  (xft-fix:main-loop)
+  (xft-fix:start-loop)
 #+END_SRC
 
 You can also insert a delay for the timer using =*clear-font-delay*=.
 	
 #+BEGIN_SRC lisp
   (setq xft-fix:*clear-font-delay* 5)
-  (xft-fix:main-loop)
+  (xft-fix:start-loop)
 #+END_SRC
 
 ** License
